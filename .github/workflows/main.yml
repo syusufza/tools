@@ -37,4 +37,4 @@ jobs:
         run: mvn -pl . test -Dtest=org.spdx.rdfparser.license.TestLicenseInfoFactory#testParseSPDXLicenseStringMixedCase
       
       - name: Check if test fails with NonDex tool
-        run: mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=org.spdx.rdfparser.license.TestLicenseInfoFactory#testParseSPDXLicenseStringMixedCase
+        run: mvn nondex:nondex
